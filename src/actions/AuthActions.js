@@ -53,5 +53,7 @@ const loginUserSuccess = (dispatch, user) => {
   });
 
   //this.props.navigation.navigate('Home')
+
+  //old way for redirecting to a screen or page
   //Actions.main();
 };

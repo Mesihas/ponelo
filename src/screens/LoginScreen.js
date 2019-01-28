@@ -1,29 +1,3 @@
-// import React, { Component } from 'react';
-// import { View, Text, Button } from 'react-native';
-
-// class LoginScreen extends Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//     };
-//   }
-
-//   render() {
-//     return (
-//       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-//         <Text>LoginScreen Screen</Text>
-//         <Button
-//           title="Go to Home"
-//           onPress={() => this.props.navigation.navigate('Home')}
-//         />
-//       </View>
-//     );
-//   }
-// }
-
-// export default LoginScreen;
-
-
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import { connect } from 'react-redux';
@@ -45,6 +19,7 @@ class LoginScreen extends Component {
 
   console.log("jeje", this.props)
   }
+  
 renderButton() {
   if (this.props.loading) {
     return <Spinner size="large" />;
